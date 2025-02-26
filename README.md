@@ -7,6 +7,7 @@ Custom Scrollbar is a lightweight, pure JavaScript and CSS solution for creating
 **scrollbarDirection**: vertical/horizontal -> default: 'vertical'
 
 **scrollbarPosX**: left/right -> default: 'right'
+
 **scrollbarPosY**: top/bottom -> default: 'bottom'
 
 **alwaysVisible**: true/false -> default: 'false'
@@ -14,8 +15,9 @@ Custom Scrollbar is a lightweight, pure JavaScript and CSS solution for creating
 **scrollbarClass**: default: ''
 
 ## Usage/Examples
-
+Also see attached index.html file
 ```html
+<link rel="stylesheet" href="customScrollbarCssJs.min.css">
 <script src="customScrollbarCssJs.min.js"></script>
 <script>
     const myScrollbar = new customScrollbarCssJs('.my-element', {
