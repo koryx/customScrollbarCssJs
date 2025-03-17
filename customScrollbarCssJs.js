@@ -21,10 +21,10 @@ var customScrollbarCssJs = (function () {
         createCustomScrollbarCssJs(element) {
             const scrollbarContent = document.createElement('div');
             scrollbarContent.classList.add('custom-scrollbar-content');
-            scrollbarContent.innerHTML = element.innerHTML;
-            element.innerHTML = "";
+            while(element.firstChild) {
+                scrollbarContent.appendChild(element.firstChild);
+            }
             element.appendChild(scrollbarContent);
-            
             const scrollbarEl = document.createElement('div');
             scrollbarEl.classList.add('custom-scrollbar');
             this.scrollbarClass ? scrollbarEl.classList.add(this.scrollbarClass) : '';
